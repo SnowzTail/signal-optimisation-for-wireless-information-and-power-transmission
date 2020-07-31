@@ -51,7 +51,7 @@ for iStream = 1: stream
     end
 end
 % sort to ensure power corresponds to correct eigenvalues
-streamPower = streamPower(index);
+streamPower(index) = streamPower;
 % normalise power
 streamPower = streamPower ./ sum(streamPower) * txPower;
 end
